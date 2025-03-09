@@ -1,16 +1,4 @@
-
-interface PropsNotification {
-    profilePhoto: string,
-    name: string,
-    reaction: string,
-    reminder?: string,
-    isRead: boolean,
-    fecha: string,
-    message?: string,
-    photo?: string, 
-    unreadNotificationStyles: string
-    onclick: () => void
-}
+import { PropsNotification } from '../../interface/index'
 
 export const NotificationCard = ({ profilePhoto, name, reaction, reminder, isRead, fecha, message, photo, unreadNotificationStyles, onclick }: PropsNotification) => {
 
